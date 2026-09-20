@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { logoMark } from "@/lib/site-images";
+import { logoWordmarkLight } from "@/lib/site-images";
 
 export function Footer() {
   return (
@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3">
-            <img src={logoMark} alt="" className="h-10 w-10 object-contain" />
+            <img src={logoWordmarkLight} alt="" className="h-11 w-auto object-contain" />
             <span className="font-display text-2xl font-semibold uppercase tracking-[0.18em]">
               Pacific Forage SARL
             </span>
