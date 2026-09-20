@@ -18,16 +18,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-steel/95 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logoWordmarkLight} alt="" className="h-10 w-auto object-contain" />
-          <span className="leading-none">
-            <span className="block font-display text-xl font-semibold uppercase tracking-[0.18em] text-steel-foreground">
-              Pacific Forage
-            </span>
-            <span className="block font-sans text-[0.65rem] uppercase tracking-[0.35em] text-primary">
-              SARL · Water Well Drilling
-            </span>
-          </span>
+        <Link to="/" aria-label="Pacific Forage SARL — home" className="flex items-center" onClick={() => setOpen(false)}>
+          <img src={logoWordmarkLight} alt="Pacific Forage SARL" className="h-12 w-auto object-contain" />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
