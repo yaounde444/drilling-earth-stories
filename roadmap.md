@@ -5,4 +5,5 @@
 - [x] Home, Services, Equipment, Projects, About, Contact pages
 - [x] Header / footer navigation
 - [x] Apply official Pacific Forage logo (header, footer, favicon)
+- [x] French-first bilingual content and language selector
 - [ ] Optional: real African stock photography for pump installation / survey / pump testing sections

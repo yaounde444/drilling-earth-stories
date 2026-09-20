@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { logoWordmarkLight } from "@/lib/site-images";
+import { useLanguage } from "@/lib/language";
 
 export function Footer() {
+  const { choose } = useLanguage();
   return (
     <footer className="bg-steel text-steel-foreground">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-4 lg:px-8">
@@ -14,20 +16,21 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-5 max-w-md font-sans text-sm leading-relaxed text-steel-foreground/65">
-            Rotary and down-the-hole water well drilling, borehole development and pumping
-            systems. Own rigs, own crews, own compressors — mobilised across Cameroon and
-            the Central African sub-region.
+            {choose({
+              fr: "Forage rotary et fond de trou, développement de forages et systèmes de pompage. Nos propres foreuses, équipes et compresseurs interviennent au Cameroun et en Afrique centrale.",
+              en: "Rotary and down-the-hole water well drilling, borehole development and pumping systems. Own rigs, own crews, own compressors — mobilised across Cameroon and the Central African sub-region.",
+            })}
           </p>
         </div>
 
         <div>
-          <h4 className="font-display text-sm uppercase tracking-[0.25em] text-primary">Company</h4>
+          <h4 className="font-display text-sm uppercase tracking-[0.25em] text-primary">{choose({ fr: "Entreprise", en: "Company" })}</h4>
           <ul className="mt-5 space-y-3 font-sans text-sm text-steel-foreground/70">
             <li><Link to="/services" className="hover:text-primary">Services</Link></li>
-            <li><Link to="/equipment" className="hover:text-primary">Equipment</Link></li>
-            <li><Link to="/projects" className="hover:text-primary">Projects</Link></li>
-            <li><Link to="/about" className="hover:text-primary">About us</Link></li>
-            <li><Link to="/contact" className="hover:text-primary">Request a quotation</Link></li>
+            <li><Link to="/equipment" className="hover:text-primary">{choose({ fr: "Équipements", en: "Equipment" })}</Link></li>
+            <li><Link to="/projects" className="hover:text-primary">{choose({ fr: "Réalisations", en: "Projects" })}</Link></li>
+            <li><Link to="/about" className="hover:text-primary">{choose({ fr: "À propos", en: "About us" })}</Link></li>
+            <li><Link to="/contact" className="hover:text-primary">{choose({ fr: "Demander un devis", en: "Request a quotation" })}</Link></li>
           </ul>
         </div>
 
@@ -55,7 +58,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 font-sans text-xs uppercase tracking-[0.2em] text-steel-foreground/45 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <span>© {new Date().getFullYear()} Pacific Forage SARL</span>
-          <span>Water is life. We reach it.</span>
+           <span>{choose({ fr: "L’eau, c’est la vie. Nous l’atteignons.", en: "Water is life. We reach it." })}</span>
         </div>
       </div>
     </footer>
