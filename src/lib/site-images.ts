@@ -13,7 +13,8 @@ import waterStrike2 from "@/assets/rigs/water-strike-2.jpg";
 import rigPanel from "@/assets/rigs/rig-panel.jpg";
 import rigRedSoil from "@/assets/rigs/rig-redsoil.jpg";
 import rigUrban from "@/assets/rigs/rig-urban.jpg";
-import logoMark from "@/assets/logo-mark.png";
+import logoWordmark from "@/assets/logo-wordmark.png";
+import logoWordmarkLight from "@/assets/logo-wordmark-light.png";
 
 export {
   rigHero,
