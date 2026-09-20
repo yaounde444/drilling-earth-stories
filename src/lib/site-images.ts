@@ -30,7 +30,8 @@ export {
   rigPanel,
   rigRedSoil,
   rigUrban,
-  logoMark,
+  logoWordmark,
+  logoWordmarkLight,
 };
 
 export const gallery = [

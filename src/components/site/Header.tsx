@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import { logoMark } from "@/lib/site-images";
+import { logoWordmarkLight } from "@/lib/site-images";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -19,7 +19,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-steel/95 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logoMark} alt="" className="h-9 w-9 object-contain" />
+          <img src={logoWordmarkLight} alt="" className="h-10 w-auto object-contain" />
           <span className="leading-none">
             <span className="block font-display text-xl font-semibold uppercase tracking-[0.18em] text-steel-foreground">
               Pacific Forage
